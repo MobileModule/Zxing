@@ -1,0 +1,8 @@
+<resources>
+    <string name="title">스캐닝</string>
+    <string name="scan_tips">QR 코드를 상자에 넣으면 자동으로 스캔됩니다</string>
+    <string name="phone_tips">팁</string>
+    <string name="phone_alert">권한 관리에서 카메라 촬영 권한을 활성화 해주세요</string>
+    <string name="comfirm">확신하는</string>
+    <string name="cancel">취소</string>
+</resources>
