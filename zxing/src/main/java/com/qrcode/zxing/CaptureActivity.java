@@ -243,7 +243,7 @@ public class CaptureActivity extends BaseCaptureActivity implements Callback {
         new AlertDialog.Builder(CaptureActivity.this)
                 .setTitle(getResources().getString(R.string.phone_tips))
                 .setMessage(getResources().getString(R.string.phone_alert))
-                .setPositiveButton(getResources().getString(R.string.comfirm), new DialogInterface.OnClickListener() {
+                .setPositiveButton(getResources().getString(R.string.confirm), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         getAppDetailSettingIntent(CaptureActivity.this);
