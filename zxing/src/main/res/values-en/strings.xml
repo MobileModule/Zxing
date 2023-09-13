@@ -3,6 +3,6 @@
     <string name="scan_tips">Align QR Code within frame to scan</string>
     <string name="phone_tips">Note</string>
     <string name="phone_alert">Unable to access camera data.Check whether camera is enabled.</string>
-    <string name="comfirm">Sure</string>
+    <string name="confirm">Sure</string>
     <string name="cancel">Cancel</string>
 </resources>

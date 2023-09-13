@@ -1,0 +1,8 @@
+<resources>
+    <string name="title">スキャン</string>
+    <string name="scan_tips">QRコードを枠内に合わせてスキャンします</string>
+    <string name="phone_tips">注記</string>
+    <string name="phone_alert">カメラ データにアクセスできません。カメラが有効になっているかどうかを確認してください。</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">キャンセル</string>
+</resources>

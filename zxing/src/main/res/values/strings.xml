@@ -1,8 +1,8 @@
 <resources>
-    <string name="title">扫描</string>
-    <string name="scan_tips">将二维码放入框内，即可自动扫描</string>
-    <string name="phone_tips">温馨提示</string>
-    <string name="phone_alert">请在权限管理中开启摄像头拍摄权限</string>
-    <string name="comfirm">确定</string>
-    <string name="cancel">取消</string>
+    <string name="title">Scan</string>
+    <string name="scan_tips">Align QR Code within frame to scan</string>
+    <string name="phone_tips">Note</string>
+    <string name="phone_alert">Unable to access camera data.Check whether camera is enabled.</string>
+    <string name="confirm">Sure</string>
+    <string name="cancel">Cancel</string>
 </resources>

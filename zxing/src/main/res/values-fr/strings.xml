@@ -1,0 +1,8 @@
+<resources>
+    <string name="title">Analyse</string>
+    <string name="scan_tips">Alignez le code QR dans le cadre pour le scanner</string>
+    <string name="phone_tips">Note</string>
+    <string name="phone_alert">Veuillez activer l\'autorisation de prise de vue avec la caméra dans la gestion des autorisations.</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cancel">Annuler</string>
+</resources>
