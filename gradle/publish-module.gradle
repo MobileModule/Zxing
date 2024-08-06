@@ -1,0 +1,42 @@
+apply plugin: 'maven-publish'
+apply from: rootProject.file("gradle/git-tag-version.gradle")
+
+group = GROUP
+version = getVersionNameFromTags()
+
+//task androidSourcesJar(type: Jar) {
+//    from android.sourceSets.main.java.srcDirs
+//}
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+//    classifier "sources"
+    archiveClassifier.set("sources")
+
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = GROUP
+            version = version
+            afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
+            artifact generateSourcesJar
+        }
+    }
+    Properties mProperties = new Properties()
+    mProperties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def pomPwd = mProperties.containsKey('POM_PWD')?mProperties.get('POM_PWD').toString():'pwd'
+    def pomURL = mProperties.containsKey('POM_URL')?mProperties.get('POM_URL').toString():''
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url = pomURL
+            //nexus
+            credentials {
+                username = 'druid'
+                password = pomPwd
+            }
+        }
+    }
+}

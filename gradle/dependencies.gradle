@@ -1,0 +1,9 @@
+ext {
+    androidBuild = [
+            versionName: "1.0.3",
+            versionCode: 3,
+    ]
+    GROUP = 'com.android.zxing'
+    POM_URL = 'http://localhost:8081/repository/druid/'
+    POM_PACKAGING = 'aar'
+}
